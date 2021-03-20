@@ -90,12 +90,12 @@ let uiDisplay = (humanImgChoice, botImgChoice, finalMessage) => {
 
 	humanChoiceUI.innerHTML = `${elementsDatabase[humanImgChoice].className}`;
 	humanChoiceUI.className = `${elementsDatabase[humanImgChoice].className}`;
-	humanChoiceUI.style.boxShadow = '0 10px 50px rgb(37, 50, 233)';
+	humanChoiceUI.style.boxShadow = '0 10px 40px rgb(37, 50, 233)';
 	finalMessageUI.innerHTML = `<h3 class="final-message" style="color:${finalMessage['color']};
 	">${finalMessage['message']}</h3>`;
 	botChoiceUI.innerHTML = `${elementsDatabase[botImgChoice].className}`;
 	botChoiceUI.className = `${elementsDatabase[botImgChoice].className}`;
-	botChoiceUI.style.boxShadow = '0 10px 50px rgb(243, 38, 23)';
+	botChoiceUI.style.boxShadow = '0 10px 40px rgb(243, 38, 23)';
 
 	flexBox.appendChild(humanChoiceUI);
 	flexBox.appendChild(finalMessageUI);
