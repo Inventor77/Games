@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #262626;
+  color: azure;
+}
+
+.container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  max-width: 768px;
+  min-height: 512px;
+  border: 1px dotted aliceblue;
+  border-radius: 16px;
+}
+
+h2 {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  font-size: 6rem;
+  color: transparent;
+  -webkit-text-stroke: 2px #666;
+}
+
+.rock,
+.paper,
+.scissor,
+.final-message {
+  height: 120px;
+  width: 120px;
+  border: 1px dotted aliceblue;
+  text-transform: capitalize;
+  border-radius: 16px;
+}
+
+.final-message {
+  border: none;
+  text-transform: uppercase;
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.flex-box div,
+.flex-box span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.flex-box div:hover {
+  -webkit-box-shadow: 0 10px 50px #25c2e9;
+          box-shadow: 0 10px 50px #25c2e9;
+}
+
+@media (max-width: 720px) {
+  .container {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    min-height: 80vh;
+    border: 1px dotted aliceblue;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
