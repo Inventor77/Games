@@ -9,7 +9,7 @@ elements.forEach((element) => {
 		botChoice = randomRPS();
 
 		let results = compete(humanChoice, botChoice);
-		message = finalMessage(results);
+		let message = finalMessage(results);
 		
 		uiDisplay(element.className, botChoice, message);
 	});
@@ -47,12 +47,14 @@ let compete = (humanChoice, computerChoice) => {
 };
 
 let finalMessage = ([humanScore, computerScore]) => {
-	if (humanScore === 0) {
+	let playerScore = humanScore;
+	let machineScore = computerScore;
+	if (playerScore === 0) {
 		return {
 			message: 'You Lost!',
 			color: 'red',
 		};
-	} else if (humanScore === 0.5) {
+	} else if (playerScore === 0.5) {
 		return {
 			message: 'You Tied!',
 			color: 'yellow',
