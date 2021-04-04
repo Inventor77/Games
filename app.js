@@ -3,19 +3,14 @@ let flexBox = document.querySelector('.flex-box');
 
 elements.forEach((element) => {
 	element.addEventListener('click', () => {
-		console.log(element);
 		let humanChoice, botChoice;
 		humanChoice = element.className;
 
 		botChoice = randomRPS();
-		console.log('BotChoice: ', botChoice);
 
 		let results = compete(humanChoice, botChoice);
-		console.log(results);
-
 		message = finalMessage(results);
-		console.log(message);
-
+		
 		uiDisplay(element.className, botChoice, message);
 	});
 });
@@ -25,9 +20,6 @@ let randomRPS = () => {
 	let random_num = Math.floor(Math.random() * 3);
 	return arr[random_num];
 };
-
-// console.log(humanChoice);
-// console.log(botChoice);
 
 let compete = (humanChoice, computerChoice) => {
 	let rpsDataBase = {
